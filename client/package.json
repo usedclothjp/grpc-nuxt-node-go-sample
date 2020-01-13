@@ -11,10 +11,12 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.9.2",
+    "@nuxtjs/axios": "^5.9.3",
+    "add": "^2.0.6",
     "grpc": "^1.24.2",
     "grpc-caller": "^0.13.0",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "yarn": "^1.21.1"
   },
   "devDependencies": {}
 }

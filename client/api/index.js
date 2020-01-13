@@ -11,8 +11,8 @@ var sum_proto = grpc.load(PROTO_PATH).sumpb;
 var client = new sum_proto.SumService('localhost:60000', grpc.credentials.createInsecure());
 
 app.get('/rpc', (req, res) => {
-    // console.log(Number(req.query.num1))
-    // console.log(Number(req.query.num2))
+    console.log(Number(req.query.num1))
+    console.log(Number(req.query.num2))
     client.Sum({num1: Number(req.query.num1), num2: Number(req.query.num2)}, (err, response) => {
         res.send(response);
     });
